@@ -1,10 +1,78 @@
-Start Flask
+Flask Start OneFile
 =========================
 
 [flask]: https://flask.palletsprojects.com
 
-Tento repositář má vám (i mě) usnadnit založení nového projektu
-s frameworkem [Flask][].
+Tento repositář má vám i mě usnadnit založení nového projektu pro framework
+[Flask][]. Zde najdete základní adresářovou strukturu pro aplikaci a kostru
+aplikace.
+
+Pokud je aplikace složitější a místo jednoho souboru chce balíček, mrkněte se na
+[Flask Start](/spseol/flask-start)
+
+
+## ... jak na to?
+
+
+Dejme tomu že začínám nový projekt. Bude se jmenovat třeba *Foo*. Můžete si
+repositář [forknout](htts://help.github.com/articles/fork-a-repo/) nebo
+[naklonovat](https://help.github.com/articles/cloning-a-repository/) ale
+nejlepší je **[použít
+šablonu](https://github.com/spseol/flask-start-onefile/generate)** -- tím se
+vytvoří váš vlastní repositář s novou historií a ten si
+[naklonujete](https://help.github.com/articles/cloning-a-repository/).
+
+
+Repositář obsahuje skript **`start.sh`**, který vše další udělá za vás.
+  * vytvoří virtuální prostředí
+  * nainstaluje potřebné balíčky
+  * přestane sledovat .env
+  * smaže sám sebe
+
+Pokud chcete mít kontrolu, můžete pokračovat a všechno si pěkně udělat [růčo](#růčo).
+
+VSCode
+-----------
+
+V souboru [settings.json](.vscode/settings.json) je nastavení, které vám zajistí
+očekávané chování VSCode.
+
+```json
+{
+  "files.associations": {
+    "*.html": "jinja-html"
+  },
+  "emmet.includeLanguages": {
+    "jinja-html": "html",
+    "vue-html": "html"
+  }
+```
+
+Doporučuji ještě doinstalovat si následující rozšíření:
+  * aby se vám lépe psalo:
+    * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+    * [Happy Flasker](https://marketplace.visualstudio.com/items?itemName=apedroed.Happy-Flasker)
+    * [Better Jinja](https://marketplace.visualstudio.com/items?itemName=samuelcolvin.jinjahtml)
+  * aby se vám lépe pracovalo s Gitem
+    * [Git Extension Pack](https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack)
+  * aby se vám automaticky znovu načetla stránka v prohlížeči při změně zdrojového kódu
+    * [Live Reload](https://marketplace.visualstudio.com/items?itemName=Phu1237.live-reload)
+
+LiveReload
+----------------
+
+LiveReload je udělátko, které slouží k automatickému znovu-načtení webové
+stránky při vývoji webových aplikací. Na jedné straně je vždy [rozšíření v
+prohlížeči](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
+nebo [JS knihovna](https://github.com/livereload/livereload-js).
+
+Na druhé straně je aplikace, která hlídá změny v souborech a pokud se něco
+změní pošle do prohlížeče povel k znovu-načtení stránky. Tato aplikace má více
+různých implementací:
+
+* [VSCode](https://marketplace.visualstudio.com/search?term=livereload&target=VSCode&category=All%20categories&sortBy=Relevance): <https://marketplace.visualstudio.com/items?itemName=Phu1237.live-reload>
+* Python: <https://livereload.readthedocs.io/en/latest/>
+* Ruby: <https://github.com/guard/guard-livereload>
 
 Několik užitečných odkazů pro začátek
 ------------------------------------------
@@ -18,32 +86,14 @@ Několik užitečných odkazů pro začátek
 * <https://elc.github.io/posts/executable-flask-pyinstaller/>
 ---------------------------------------------------------------------------
 * [w3schools.com](https://www.w3schools.com/) ,[Jak psát web](https://www.jakpsatweb.cz/) 
-* [Flask docs][flask],  [Flask Quick start](https://flask.palletsprojects.com/quick-start-onefile/)
+* [Flask docs][flask],  [Flask Quick start](https://flask.palletsprojects.com/quickstart/)
 * [Template Designer Documentation](https://jinja.palletsprojects.com/templates/)
 * [Bábot](https://www.blabot.cz/)
 * [Clker.com](http://www.clker.com/), [Commons](https://commons.wikimedia.org),
   [pixabay](https://pixabay.com/), [Unsplash](https://unsplash.com/)
 ---------------------------------------------------------------------------
 
- ... jak na to?
- ------------------------
-
-Zde najdete základní adresářovou strukturu pro aplikaci ve 
-[Flasku][flask]
-
-0. Dejme tomu že začínám nový projekt. Bude se jmenovat třeba *Foo*.
-Můžete si [forknout](htts://help.github.com/articles/fork-a-repo/)
-nebo prostě jen 
-[naklonovat](https://help.github.com/articles/cloning-a-repository/)
-tento repositář:
-
-
-```bash
-git clone --depth 1 https://github.com/spseol/startflask.git Foo
-cd Foo
-```
-Repositář obsahuje skript **`start.sh`**, který vše další udělá za vás.
-Pokud chcete mít kontrolu, můžete pokračovat a všechno si pěkně udělat růčo.
+## Růčo
 
 1. Vytvořím si [virtuální prostředí](https://virtualenv.pypa.io/en/stable/)
    právě pro aplikaci *Foo*.:
@@ -82,3 +132,4 @@ pip install psycopg2 pony
 ```
 flask run
 ```
+

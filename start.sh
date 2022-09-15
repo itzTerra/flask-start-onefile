@@ -25,7 +25,7 @@ else
     echo "... no dobře, ale být tebou, tak bych mě vymazal!"
 fi
 
-git commit -m 'new Init'
+#git commit -m 'new Init'
 
 echo "Pro aktivaci virtuálního prostředí použij:
 
