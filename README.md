@@ -18,7 +18,7 @@ Několik užitečných odkazů pro začátek
 * <https://elc.github.io/posts/executable-flask-pyinstaller/>
 ---------------------------------------------------------------------------
 * [w3schools.com](https://www.w3schools.com/) ,[Jak psát web](https://www.jakpsatweb.cz/) 
-* [Flask docs][flask],  [Flask Quick start](https://flask.palletsprojects.com/quickstart/)
+* [Flask docs][flask],  [Flask Quick start](https://flask.palletsprojects.com/quick-start-onefile/)
 * [Template Designer Documentation](https://jinja.palletsprojects.com/templates/)
 * [Bábot](https://www.blabot.cz/)
 * [Clker.com](http://www.clker.com/), [Commons](https://commons.wikimedia.org),
