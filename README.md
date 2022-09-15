@@ -8,7 +8,7 @@ Tento repositář má vám i mě usnadnit založení nového projektu pro framew
 aplikace.
 
 Pokud je aplikace složitější a místo jednoho souboru chce balíček, mrkněte se na
-[Flask Start](/spseol/flask-start)
+[Flask Start](../flask-start)
 
 
 ## ... jak na to?
