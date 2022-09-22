@@ -74,6 +74,15 @@ různých implementací:
 * Python: <https://livereload.readthedocs.io/en/latest/>
 * Ruby: <https://github.com/guard/guard-livereload>
 
+### Jak si rozjet Live Reload
+
+1. Nainstalujete si [rozšíření do prohlížeče](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
+2. Nainstalujete si [rozšíření do VSCode](https://marketplace.visualstudio.com/search?term=livereload&target=VSCode&category=All%20categories&sortBy=Relevance)
+3. Ve VSCode přes Ctrl+Shift+P spustíte Liver Reload nebo si v nastavení zapnete, aby se spuštělo samo při startu VSCode
+4. V prohlížeči kliknete na ikonku, aby se provedlo spojení VSCode a prohlížeče.
+
+A je to!
+
 Několik užitečných odkazů pro začátek
 ------------------------------------------
 
