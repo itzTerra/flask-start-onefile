@@ -29,16 +29,19 @@
 
 {% block obsah %}
 
-{#{% filter markdown %}#}
 
-# Flask
+<h1>Flask</h1>
 
+<p>
 Startovací šablona pro webový framework Flask.
+</p>
 
-![Flaštička]({{ url_for('static', filename='flask.png') }})
-![Flaštičky]({{ url_for('static', filename='flasks.png') }})
+<h2>Jenda flaška</h2>
+<img src="{{ url_for('static', filename='flask.png') }}" alt="">
 
-{#{% endfilter %}#}
+<h2>Dvě flašky</h2>
+<img src="{{ url_for('static', filename='flasks.png') }}" alt="">
+
 
 
 

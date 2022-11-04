@@ -62,15 +62,17 @@ LiveReload
 ----------------
 
 LiveReload je udělátko, které slouží k automatickému znovu-načtení webové
-stránky při vývoji webových aplikací. Na jedné straně je vždy [rozšíření v
-prohlížeči](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
-nebo [JS knihovna](https://github.com/livereload/livereload-js).
+stránky při vývoji webových aplikací. 
 
-Na druhé straně je aplikace, která hlídá změny v souborech a pokud se něco
-změní pošle do prohlížeče povel k znovu-načtení stránky. Tato aplikace má více
-různých implementací:
+* Na jedné straně je vždy [rozšíření v prohlížeči](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
+  nebo [JS knihovna](https://github.com/livereload/livereload-js).
+* Na druhé straně je aplikace, která hlídá změny v souborech a pokud se něco
+  změní pošle do prohlížeče povel k znovu-načtení stránky. Tato aplikace má více
+  různých implementací:
 
-* [VSCode](https://marketplace.visualstudio.com/search?term=livereload&target=VSCode&category=All%20categories&sortBy=Relevance): <https://marketplace.visualstudio.com/items?itemName=Phu1237.live-reload>
+* [VSCode](https://marketplace.visualstudio.com/search?term=livereload&target=VSCode&category=All%20categories&sortBy=Relevance):
+  <https://marketplace.visualstudio.com/items?itemName=Phu1237.live-reload> nebo 
+  <https://marketplace.visualstudio.com/items?itemName=thebearingedge.livereload-server>
 * Python: <https://livereload.readthedocs.io/en/latest/>
 * Ruby: <https://github.com/guard/guard-livereload>
 
