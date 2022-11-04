@@ -78,8 +78,8 @@ stránky při vývoji webových aplikací.
 
 ### Jak si rozjet Live Reload
 
-1. Nainstalujete si [rozšíření do prohlížeče](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei)
-2. Nainstalujete si [rozšíření do VSCode](https://marketplace.visualstudio.com/search?term=livereload&target=VSCode&category=All%20categories&sortBy=Relevance)
+1. Nainstalujete si [rozšíření do prohlížeče](https://chrome.google.com/webstore/detail/remotelivereload/jlppknnillhjgiengoigajegdpieppei)
+2. Nainstalujete si [rozšíření do VSCode](https://marketplace.visualstudio.com/items?itemName=ziishaned.livereload)
 3. Ve VSCode přes Ctrl+Shift+P spustíte Liver Reload nebo si v nastavení zapnete, aby se spuštělo samo při startu VSCode
 4. V prohlížeči kliknete na ikonku, aby se provedlo spojení VSCode a prohlížeče.
 
@@ -88,23 +88,31 @@ A je to!
 Několik užitečných odkazů pro začátek
 ------------------------------------------
 
+* [Flask docs][flask]
+* [Flask Quick start](https://flask.palletsprojects.com/quickstart/)
+* [Template Designer Documentation](https://jinja.palletsprojects.com/templates/)
+* [Flask: URLs and paths in request object](https://gist.github.com/MarrekNozka/5f8860465f79b5d39a6aea3b211c4aab#file-urls_and_paths-md)
+
 * [Explore Flask](https://exploreflask.com/)
 * [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
+
 ---------------------------------------------------------------------------
+
 * <https://github.com/pyvec/elsa>
 * <https://github.com/smoqadam/PyFladesk>
 * <https://github.com/ClimenteA/flaskwebgui>
 * <https://elc.github.io/posts/executable-flask-pyinstaller/>
----------------------------------------------------------------------------
-* [w3schools.com](https://www.w3schools.com/) ,[Jak psát web](https://www.jakpsatweb.cz/) 
-* [Flask docs][flask],  [Flask Quick start](https://flask.palletsprojects.com/quickstart/)
-* [Template Designer Documentation](https://jinja.palletsprojects.com/templates/)
-* [Bábot](https://www.blabot.cz/)
-* [Clker.com](http://www.clker.com/), [Commons](https://commons.wikimedia.org),
-  [pixabay](https://pixabay.com/), [Unsplash](https://unsplash.com/)
+
 ---------------------------------------------------------------------------
 
-## Růčo
+* [Jak psát web](https://www.jakpsatweb.cz/) 
+* [w3schools.com](https://www.w3schools.com/) 
+* [Blábot](https://www.blabot.cz/)
+* [Clker.com](http://www.clker.com/), [Commons](https://commons.wikimedia.org)
+* [pixabay](https://pixabay.com/), [Unsplash](https://unsplash.com/)
+---------------------------------------------------------------------------
+
+## ...
 
 1. Vytvořím si [virtuální prostředí](https://virtualenv.pypa.io/en/stable/)
    právě pro aplikaci *Foo*.:
