@@ -93,6 +93,8 @@ Několik užitečných odkazů pro začátek
 * [Template Designer Documentation](https://jinja.palletsprojects.com/templates/)
 * [Flask: URLs and paths in request object](https://gist.github.com/MarrekNozka/5f8860465f79b5d39a6aea3b211c4aab#file-urls_and_paths-md)
 
+----------------------------------------------------------------------------
+
 * [Explore Flask](https://exploreflask.com/)
 * [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world)
 
