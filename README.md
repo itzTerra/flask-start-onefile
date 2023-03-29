@@ -1,9 +1,9 @@
-Flask Start OneFile
+Flask Start OneFile *(fork)*
 =========================
 
 [flask]: https://flask.palletsprojects.com
 
-Tento repositář má vám i mě usnadnit založení nového projektu pro framework
+Tento repositář má vám i mně usnadnit založení nového projektu pro framework
 [Flask][]. Zde najdete základní adresářovou strukturu pro aplikaci a kostru
 aplikace.
 
@@ -29,7 +29,7 @@ Repositář obsahuje skript **`start.sh`**, který vše další udělá za vás.
   * přestane sledovat .env
   * smaže sám sebe
 
-Pokud chcete mít kontrolu, můžete pokračovat a všechno si pěkně udělat [růčo](#růčo).
+Pokud chcete mít kontrolu, můžete pokračovat a všechno si pěkně udělat [růčo](#...).
 
 VSCode
 -----------
@@ -84,6 +84,37 @@ stránky při vývoji webových aplikací.
 4. V prohlížeči kliknete na ikonku, aby se provedlo spojení VSCode a prohlížeče.
 
 A je to!
+
+## Databáze
+
+V souboru **[db.py](db.py)** naleznete context managery pro **SQLite** a **MySQL** i s příkladem použití.
+
+**>>> Pro MySQL doporučuji vyplnit defaultní nastavení podle potřeby projektu. <<<**
+
+### MySQL Backup & Restore
+Zálohování databáze do souboru **`db_backup.sql`** v aktuální adresáři.
+
+```bash
+mysqldump -u USERNAME -h HOST --set-gtid-purged=OFF --no-tablespaces --column-statistics=0 'DB_NAME' > db_backup.sql
+```
+
+Obnovení databáze ze souboru **`db_backup.sql`** v aktuální adresáři.
+
+```bash
+mysql -u USERNAME -h HOST 'DB_NAME' < db_backup.sql
+```
+
+*USERNAME, HOST a DB_NAME musíte doplnit.*
+
+Příklad pro [PythonAnywhere](https://www.pythonanywhere.com/):
+```bash
+cd
+mysqldump -u mdolezel -h mdolezel.mysql.pythonanywhere-services.com --set-gtid-purged=OFF --no-tablespaces --column-statistics=0 'mdolezel$default' > db_backup.sql
+```
+```bash
+cd
+mysql -u mdolezel -h mdolezel.mysql.pythonanywhere-services.com 'mdolezel$default' < db_backup.sql
+```
 
 Několik užitečných odkazů pro začátek
 ------------------------------------------
