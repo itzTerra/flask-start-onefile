@@ -108,11 +108,8 @@ mysql -u USERNAME -h HOST 'DB_NAME' < db_backup.sql
 
 Příklad pro [PythonAnywhere](https://www.pythonanywhere.com/):
 ```bash
-cd
 mysqldump -u mdolezel -h mdolezel.mysql.pythonanywhere-services.com --set-gtid-purged=OFF --no-tablespaces --column-statistics=0 'mdolezel$default' > db_backup.sql
-```
-```bash
-cd
+
 mysql -u mdolezel -h mdolezel.mysql.pythonanywhere-services.com 'mdolezel$default' < db_backup.sql
 ```
 
