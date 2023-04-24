@@ -1,20 +1,28 @@
 import sqlite3
 import MySQLdb
 
-# Context managery (sám otevírá a zavírá DB, i když se uvnitř stane výjimka)
+# Context managers to automatically open and close even if exception occurs
 
 
 class SQLite:
-    def __init__(self, file="data.sqlite3"):
+    def __init__(self, file="data.db"):
         self.file = file
 
     def __enter__(self):
         self.conn = sqlite3.connect(self.file)
+
+        # Set fetch return type to sqlite3.Row (default is tuple)
         self.conn.row_factory = sqlite3.Row
-        return self.conn.cursor()
+        
+        self.cursor = self.conn.cursor()
+        return self.cursor
 
     def __exit__(self, type, value, traceback):
-        self.conn.commit()
+        self.cursor.close()
+
+        # Autocommit
+        # self.conn.commit()
+
         self.conn.close()
 
 
@@ -42,6 +50,10 @@ class MySQL:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.cursor.close()
+
+        # Autocommit
+        # self.conn.commit()
+
         self.conn.close()
 
 
