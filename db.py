@@ -12,7 +12,7 @@ class SQLite:
         self.conn = sqlite3.connect(self.file)
 
         # Set fetch return type to sqlite3.Row (default is tuple)
-        self.conn.row_factory = sqlite3.Row
+        # self.conn.row_factory = sqlite3.Row
         
         self.cursor = self.conn.cursor()
         return self.cursor

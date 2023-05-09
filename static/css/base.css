@@ -1,10 +1,23 @@
 [data-bs-theme=dark] body {
     background-color: #121212;
 }
+[data-bs-theme=dark] {
+    --bs-body-color: #c7cdd3;
+    --bs-secondary-color: rgba(173, 181, 189, 0.8);
+    --bs-border-color: var(--bs-dark-border-subtle);
+}
 
 html { 
     height:100%;
 }
 body { 
     min-height:100%;
+}
+
+.base-alert{
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
 }
